@@ -1,0 +1,363 @@
+/* Contents
+
+1. Main
+1.1 Footer
+
+2. Main page
+
+
+*/
+
+/*****   MAIN   *****/
+body {
+    margin: 0;
+    padding: 0;
+    font: Arial;
+}
+.content {
+    min-height: 80vh;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1100px;
+
+}
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+p {
+    margin: 0;
+}
+@font-face {
+    font-family: Playfair; /* Имя шрифта */
+    src: url(../css/PlayfairDisplaySC-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+/***** FOOTER  *****/
+footer {
+    height: 20vh;
+    background-color: #787878;
+color: white;
+}
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10vw;
+}
+
+/***** MAIN PAGE *****/
+.page-cover {
+    background: url("../images/immigracija.jpg");
+    height: 100vh;
+    background-size: 100% 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10vh;
+}
+.page-cover p {
+    padding: 40vh 0 10vh;
+}
+.page-cover a {
+    border: 2px solid white;
+    font-size: 5vh;
+    padding: 3vh;
+    text-decoration: none;
+    color: white;
+
+}
+.categories {
+    display: inline-block;
+    height: 100vh;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: Georgia;
+    text-align: center;
+    font-size: 6vh;
+    color: white;
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+
+
+}
+.categories p {
+    padding-top: 30vh;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+
+}
+.categories a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    position: absolute;
+    right: 21%;
+    top: 70%;
+    padding: 2vh;
+
+}
+#study, #business, #family {
+    width: 33vw;
+    display: inline-block;
+    padding: 0;
+    height: 100%;
+    float: left;
+    position: relative;
+    /*margin-right: -4px;*/
+}
+#study {
+    background: url("../images/education.jpg");
+    background-size: cover;
+}
+#business {
+    background: url("../images/1012152211.jpg");
+    background-size: cover;
+    width: 32.5vw;
+
+}
+#family {
+    background: url("../images/082f954fcbfef8e23d4b6d9a98e579c0.jpg");
+    background-size: cover;
+    width: 33.2vw;
+}
+
+/*************************************/
+
+body {
+    margin: 0;
+    background: #d4d4d4;
+}
+video { 
+    
+ /*   top: 50%;
+    left: 50%;*/
+    width: 100vw;
+    height: 100wh;
+
+    z-index: -100;
+   /* transform: translateX(-50%) translateY(-50%);*/
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+    opacity: .5;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    div{width:70%;}
+}
+@media screen and (max-device-width: 800px) {
+    html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+}
+
+/********* Education page **********/
+#education {
+    background-color: rgba(112, 162, 204, 1);
+    background: linear-gradient(to bottom, rgba(112, 162, 204, 1), #ffffff);
+}
+/********* Slider **********/
+
+
+#block-for-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+#viewport {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+    -o-transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+    transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+}
+
+#slidewrapper,
+#slidewrapper ul,
+#slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+
+/*************** resons ***********/
+#reasons-block {
+    min-height: 100vh;
+    width: 100%;
+}
+#reasons {
+    color:white;
+    text-align: center;
+    background-image: url("../images/education/hostgator443_hostgator574_headerbluebgpaint.png");
+    width: 50%;
+    margin: 2% auto;
+    padding: 3%;
+    background-size: cover ;
+
+}
+#reasons-list {
+    text-align: center;
+}
+#reasons-list ul {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+#reasons-list li {
+    list-style: none;
+    width: 28%;
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 3.5% 2%;
+}
+#reasons-list li:nth-child(4),#reasons-list li:last-child {
+    width: 38%;
+    padding-bottom: 5%;
+}
+
+#reasons-list p {
+    position: relative;
+    font-family: Playfair;
+    margin: auto 0;
+}
+#reasons-list li > img {
+    height: 115px;
+    width: 115px;
+    padding-right: 5px;
+}
+#question-block {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/education/appirions.jpg");
+    background-size: cover;
+}
+#question-info {
+    position: relative;
+    background: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+#question-info h3 {
+    padding: 10% 0 3%;
+    font-size: 10vh;
+}
+#question-info p {
+    width: 60%;
+    margin: 0 auto 1%;
+    font-size: 5vh;
+
+}
+#question-info img {
+
+    width: 150px;
+    height: 150px;
+}
+.list-of-services {
+    font-family: sans-serif;
+    text-align: justify;
+
+}
+.list-of-services li {
+    padding: 1% 0% 1% 1%;
+}
+h4 {
+    text-align: center;
+    font-family: Playfair;
+
+}
+@media screen and (max-device-width: 1100px) {
+    #viewport {
+        height: auto;
+    }
+    #reasons-block {
+        min-height: auto;
+    }
+    #question-info h3{
+        font-size: 6vh;
+    }
+    #question-info p{
+        font-size: 4vh;
+        margin-bottom: 5%;
+    }
+}
