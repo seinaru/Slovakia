@@ -1,31 +1,9 @@
 /**
  * Created by UncleDead on 05.07.2017.
  */
-/*document.ready(function() {
-    $('a[href^="#"]').click(function() {
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        if($.browser.safari){
-
-        }else {
-            $('html').animate( {scrollTop: destination }, 1000);
-
-        }
-        return false;
-    });
-})*/
-
-/*$(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});*/
 
 window.onload = function() {
-    $("#page-cover").on("click","a", function (event) {
+    $("#cover-text").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;

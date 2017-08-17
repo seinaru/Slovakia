@@ -34,22 +34,40 @@ p {
     font-family: Playfair; /* Имя шрифта */
     src: url(../css/PlayfairDisplaySC-Regular.otf); /* Путь к файлу со шрифтом */
 }
+h1 {
+    margin: 0;
+}
 
 /***** FOOTER  *****/
 footer {
     height: 20vh;
-    background-color: #787878;
+    background-color: #323232;
 color: white;
+}
+footer li {
+    list-style-type: none;
+    padding-top: 1vh;
 }
 footer ul {
     display: inline-block;
     vertical-align: top;
     padding-right: 10vw;
+    padding-top: 1vh;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+
 }
 
 /***** MAIN PAGE *****/
 .page-cover {
-    background: url("../images/immigracija.jpg");
+
     height: 100vh;
     background-size: 100% 100%;
     text-align: center;
@@ -57,8 +75,9 @@ footer ul {
     color: white;
     font-size: 10vh;
 }
-.page-cover p {
+.page-cover h1 {
     padding: 40vh 0 10vh;
+    font-family: Playfair;
 }
 .page-cover a {
     border: 2px solid white;
@@ -68,8 +87,53 @@ footer ul {
     color: white;
 
 }
+#bgvid {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top:0;
+    z-index: -100;
+    /* transform: translateX(-50%) translateY(-50%);*/
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade {
+    opacity: .5;
+}
+#cover-text {
+    top:0;
+}
+#page-cover {
+
+    position: absolute;
+}
+#main-page {
+    background: linear-gradient(to bottom, #9bd1fc, white);
+}
+
+.info-block {
+    padding: 2vh 0;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+#main-page h2, h3 {
+    font-family: Playfair;
+    margin: 0%;
+    padding: 2vh 0;
+}
+#main-page ul {
+    margin: 0;
+    padding-bottom: 2vh;
+}
+
+.container {
+    padding: 0;
+    margin: 0%;
+}
 .categories {
-    display: inline-block;
+
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     text-transform: uppercase;
@@ -77,7 +141,7 @@ footer ul {
     text-align: center;
     font-size: 6vh;
     color: white;
-    display: block;
+
     background-color: rgba(0,0,0,0.6);
 
 
@@ -86,26 +150,27 @@ footer ul {
     padding-top: 30vh;
     background-color: rgba(0,0,0,0.6);
     height: 100%;
+    font-size: 6vh;
 
 }
 .categories a {
     color: white;
+    font-size: 5vh;
     text-decoration: none;
     border: 2px solid white;
     position: absolute;
-    right: 21%;
+    text-align: center;
+   margin: 0 auto;
+    left: 25%;
     top: 70%;
     padding: 2vh;
 
 }
 #study, #business, #family {
-    width: 33vw;
-    display: inline-block;
+
     padding: 0;
     height: 100%;
-    float: left;
-    position: relative;
-    /*margin-right: -4px;*/
+
 }
 #study {
     background: url("../images/education.jpg");
@@ -114,43 +179,24 @@ footer ul {
 #business {
     background: url("../images/1012152211.jpg");
     background-size: cover;
-    width: 32.5vw;
-
 }
 #family {
     background: url("../images/082f954fcbfef8e23d4b6d9a98e579c0.jpg");
     background-size: cover;
-    width: 33.2vw;
 }
 
 /*************************************/
 
 body {
     margin: 0;
-    background: #d4d4d4;
+    background: linear-gradient(to bottom, rgba(0, 189, 255, 0.11), white);
 }
-video { 
-    
- /*   top: 50%;
-    left: 50%;*/
-    width: 100vw;
-    height: 100wh;
-
-    z-index: -100;
-   /* transform: translateX(-50%) translateY(-50%);*/
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-}
-.stopfade {
-    opacity: .5;
-}
-
 
 
 
 @media screen and (max-width: 500px) {
     div{width:70%;}
+    video {display: none}
 }
 @media screen and (max-device-width: 800px) {
     html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
@@ -360,4 +406,51 @@ h4 {
         font-size: 4vh;
         margin-bottom: 5%;
     }
+}
+
+
+/********* Business *******/
+#business-cover {
+    height: 40vh;
+    width: 100%;
+    background: url("../images/business/business.jpg");
+    background-size: cover  ;
+    position: relative;
+    display: block;
+}
+#business-cover h1, #family-cover h1 {
+    color: white;
+    text-align: center;
+    padding-top: 15vh;
+    font-family: Playfair;
+
+    margin: 0;
+}
+#business-wrapper {
+
+}
+#business-wrapper h3 {
+    text-align: center;
+    margin: 2vh 0;
+}
+#business-wrapper p {
+    text-align: justify;
+    padding-top: 2vh;
+    text-indent: 1.5em;
+}
+#business-wrapper li {
+    padding-bottom: 2vh;
+    text-align: justify;
+}
+
+/*************** Family Page ***************/
+
+
+#family-cover {
+    height: 40vh;
+    width: 100%;
+    background: url("../images/family/family-splash2.jpg");
+    background-size: cover  ;
+    position: relative;
+    display: block;
 }
