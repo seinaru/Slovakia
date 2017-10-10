@@ -40,13 +40,13 @@ h1 {
 
 /***** FOOTER  *****/
 footer {
-    height: 20vh;
+    min-height: 20vh;
     background-color: #323232;
-color: white;
+    color: white;
 }
 footer li {
     list-style-type: none;
-    padding-top: 1vh;
+    padding: 5px 0;
 }
 footer ul {
     display: inline-block;
@@ -57,7 +57,8 @@ footer ul {
 footer a {
     color: white;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 14px;
+    padding: 5px 0;
 }
 footer a:hover {
     text-decoration: underline;
@@ -141,30 +142,38 @@ footer a:hover {
     text-align: center;
     font-size: 6vh;
     color: white;
-
-    background-color: rgba(0,0,0,0.6);
-
-
 }
-.categories p {
-    padding-top: 30vh;
+.categories-item {
     background-color: rgba(0,0,0,0.6);
     height: 100%;
+}
+.categories p {
+    padding-top: 20%;
     font-size: 6vh;
+    min-height: 70%;
 
 }
 .categories a {
     color: white;
-    font-size: 5vh;
+    font-size: 28px;
     text-decoration: none;
     border: 2px solid white;
-    position: absolute;
     text-align: center;
-   margin: 0 auto;
-    left: 25%;
-    top: 70%;
-    padding: 2vh;
 
+    padding: 5px;
+
+
+
+}
+@media screen and (max-width: 1100px) {
+    .categories a {
+        font-size: 24px;
+        padding: 6px;
+        margin-bottom: 20%;
+    }
+    #categories {
+        height: auto;
+    }
 }
 #study, #business, #family {
 
@@ -195,11 +204,11 @@ body {
 
 
 @media screen and (max-width: 500px) {
-    div{width:70%;}
+    div{width:100%;}
     video {display: none}
 }
 @media screen and (max-device-width: 800px) {
-    html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+    html { background: url("/images/immigracija.JPG") #000 no-repeat center center fixed; background-size: cover; }
     #bgvid { display: none; }
 }
 
@@ -307,7 +316,7 @@ body {
 /*************** resons ***********/
 #reasons-block {
     min-height: 100vh;
-    width: 100%;
+    /*width: 100%;*/
 }
 #reasons {
     color:white;
@@ -322,37 +331,27 @@ body {
 #reasons-list {
     text-align: center;
 }
-#reasons-list ul {
-    display: block;
-    width: 100%;
-    position: relative;
-    padding: 0;
-}
 #reasons-list li {
     list-style: none;
-    width: 28%;
-    display: inline-flex;
-    margin: 0 auto;
-    padding: 3.5% 2%;
+    min-height: 200px;
 }
-#reasons-list li:nth-child(4),#reasons-list li:last-child {
-    width: 38%;
-    padding-bottom: 5%;
-}
-
 #reasons-list p {
-    position: relative;
     font-family: Playfair;
-    margin: auto 0;
 }
 #reasons-list li > img {
-    height: 115px;
-    width: 115px;
-    padding-right: 5px;
+    max-height: 100px;
+    max-width: 100px;
+
 }
+
+
+
+
+
+
 #question-block {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url("../images/education/appirions.jpg");
     background-size: cover;
 }
@@ -360,7 +359,7 @@ body {
     position: relative;
     background: rgba(0,0,0, 0.6);
     width: 100%;
-    height: 100vh;
+
     color: white;
     text-align: center;
 }
@@ -371,7 +370,7 @@ body {
 #question-info p {
     width: 60%;
     margin: 0 auto 1%;
-    font-size: 5vh;
+    font-size: 24px;
 
 }
 #question-info img {
@@ -379,6 +378,12 @@ body {
     width: 150px;
     height: 150px;
 }
+
+
+
+
+
+
 .list-of-services {
     font-family: sans-serif;
     text-align: justify;
@@ -412,6 +417,7 @@ h4 {
 /********* Business *******/
 #business-cover {
     height: 40vh;
+    min-height: 200px;
     width: 100%;
     background: url("../images/business/business.jpg");
     background-size: cover  ;
@@ -425,9 +431,6 @@ h4 {
     font-family: Playfair;
 
     margin: 0;
-}
-#business-wrapper {
-
 }
 #business-wrapper h3 {
     text-align: center;
@@ -448,6 +451,7 @@ h4 {
 
 #family-cover {
     height: 40vh;
+    min-height: 200px;
     width: 100%;
     background: url("../images/family/family-splash2.jpg");
     background-size: cover  ;

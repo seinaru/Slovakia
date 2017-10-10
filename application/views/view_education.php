@@ -39,26 +39,36 @@
         <div id="reasons-block">
             <!--Внж на основании обучения в словацком университете. (S.R.O) - 800 евро-->
             <h2 id="reasons">Преимущества обучения в Словакии</h2>
-            <ul id="reasons-list">
-                <li><img src="../../images/education/free.png" align="middle">
-                    <p>Обучение на дневной форме является бесплатным, также на большинство профессий не требуется
-                    вступительных экзаменов</p></li>
-                <li><img src="../../images/education/eu.png">
-                    <p>Возможность учиться в Европе, ведь Словакия - член Евросоюза</p></li>
-                <li><img src="../../images/education/quality.png">
-                    <p>Высокое качество образования</p></li>
+            <ul class="container" id="reasons-list">
+                <li class="container col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                    <img src="../../images/education/free.png" align="middle" class="container col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <p class="container col-xs-8 col-sm-8 col-md-8 col-lg-9">Обучение на дневной форме является бесплатным, также на большинство профессий не требуется
+                    вступительных экзаменов</p>
+                </li>
+                <li class="container col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                    <img src="../../images/education/eu.png" align="middle" class="container col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <p class="container col-xs-8 col-sm-8 col-md-8 col-lg-9">Возможность учиться в Европе, ведь Словакия - член Евросоюза</p>
+                </li>
+                <li class="container col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                    <img src="../../images/education/quality.png" align="middle" class="container col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <p class="container col-xs-8 col-sm-8 col-md-8 col-lg-9">Высокое качество образования</p>
+                </li>
 
-                <li><img src="../../images/education/award.png">
-                    <p>Международное сотрудничество, а это дает возможность участвовать в различных программах обмена
-                    студентов и учиться в других странах, набираясь больше опыта</p></li>
-                <li><img src="../../images/education/head.png">
-                    <p>Украина и Словакия подписали Соглашение об академическом взаимном признании, а значит что
-                    украинские аттестаты и дипломы дают право продолжать обучение в вузах Словакии</p></li>
+                <li class="container col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="../../images/education/award.png" align="middle" class="container col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <p class="container col-xs-8 col-sm-8 col-md-8 col-lg-9">Международное сотрудничество, а это дает возможность участвовать в различных программах обмена
+                    студентов и учиться в других странах, набираясь больше опыта</p>
+                </li>
+                <li class="container col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="../../images/education/head.png" align="middle" class="container col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <p class="container col-xs-8 col-sm-8 col-md-8 col-lg-9">Украина и Словакия подписали Соглашение об академическом взаимном признании, а значит что
+                    украинские аттестаты и дипломы дают право продолжать обучение в вузах Словакии</p>
+                </li>
             </ul>
         </div>
     </div>
-        <div id="question-block">
-            <div id="question-info" class="slide-action">
+        <div class="container" id="question-block">
+            <div id="question-info" class="slide-action container">
                 <h3>И что же Вы сможете получить?</h3>
                 <p>
                     Наша компания предоставляет юридическую консультацию и подержку в оформлении пакета документов
