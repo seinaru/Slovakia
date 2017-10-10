@@ -1,4 +1,4 @@
-<div id="business-cover">
+<div class="container" id="business-cover">
     <h1>ВНЖ в Словакии на основании регистрации фирмы</h1>
 </div>
 

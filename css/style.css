@@ -19,12 +19,12 @@ body {
 }
 .wrapper {
     margin: 0 auto;
-    width: 1100px;
+    max-width: 1100px;
 
 }
 @media screen and (max-width: 1100px) {
     .wrapper {
-        width: 100%;
+        padding: 0 15px;
     }
 }
 p {
@@ -32,7 +32,7 @@ p {
 }
 @font-face {
     font-family: Playfair; /* Имя шрифта */
-    src: url(../css/PlayfairDisplaySC-Regular.otf); /* Путь к файлу со шрифтом */
+    src: url("/css/PlayfairDisplaySC-Regular.otf"); /* Путь к файлу со шрифтом */
 }
 h1 {
     margin: 0;
@@ -95,13 +95,16 @@ footer a:hover {
     top:0;
     z-index: -100;
     /* transform: translateX(-50%) translateY(-50%);*/
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background: url('/images/immigracija.JPG') center no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
 .stopfade {
     opacity: .5;
 }
+
+
+
 #cover-text {
     top:0;
 }
@@ -169,10 +172,19 @@ footer a:hover {
     .categories a {
         font-size: 24px;
         padding: 6px;
-        margin-bottom: 20%;
+        margin: 10% 0 15%;
     }
     #categories {
         height: auto;
+    }
+
+    #cover-text {
+
+        width: 100%;
+        height: 100vh;
+
+        background: url('/images/education.jpg') center no-repeat;
+
     }
 }
 #study, #business, #family {
@@ -203,12 +215,16 @@ body {
 
 
 
+
 @media screen and (max-width: 500px) {
     div{width:100%;}
     video {display: none}
 }
-@media screen and (max-device-width: 800px) {
-    html { background: url("/images/immigracija.JPG") #000 no-repeat center center fixed; background-size: cover; }
+@media screen and (max-device-width: 1100px) {
+    html {
+        background: url("/images/immigracija.JPG") no-repeat top fixed;
+        background-size: auto 100vh ;
+    }
     #bgvid { display: none; }
 }
 
@@ -321,7 +337,7 @@ body {
 #reasons {
     color:white;
     text-align: center;
-    background-image: url("../images/education/hostgator443_hostgator574_headerbluebgpaint.png");
+    background-image: url("/images/education/hostgator443_hostgator574_headerbluebgpaint.png");
     width: 50%;
     margin: 2% auto;
     padding: 3%;
@@ -335,6 +351,7 @@ body {
     list-style: none;
     min-height: 200px;
 }
+
 #reasons-list p {
     font-family: Playfair;
 }
@@ -344,7 +361,20 @@ body {
 
 }
 
+@media screen and (max-device-width: 1100px) {
+    #reasons-list li {
+        margin-bottom: 15px;
+        min-height: 100px;
+    }
+    #reasons-list li > img {
+        max-height: 60px;
+        max-width: 60px;
 
+    }
+    #reasons {
+        width: 70%;
+    }
+}
 
 
 
@@ -398,43 +428,53 @@ h4 {
 
 }
 @media screen and (max-device-width: 1100px) {
+    #question-block {
+
+        min-height: 100%;
+    }
     #viewport {
         height: auto;
     }
     #reasons-block {
-        min-height: auto;
+        min-height: 0px;
     }
     #question-info h3{
-        font-size: 6vh;
+        font-size: 30px;
     }
     #question-info p{
-        font-size: 4vh;
+        font-size: 16px;
         margin-bottom: 5%;
+        width: 90%;
     }
 }
 
 
 /********* Business *******/
 #business-cover {
-    height: 40vh;
-    min-height: 200px;
+    min-height: 40vh;
+
     width: 100%;
-    background: url("../images/business/business.jpg");
+    background: url("/images/business/business.jpg");
     background-size: cover  ;
     position: relative;
     display: block;
 }
+@media screen and (max-device-width: 1100px) {
+    #business-cover {
+        min-height: 200px;
+    }
+}
 #business-cover h1, #family-cover h1 {
     color: white;
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 15%;
     font-family: Playfair;
 
     margin: 0;
 }
 #business-wrapper h3 {
     text-align: center;
-    margin: 2vh 0;
+    margin: 5% 0;
 }
 #business-wrapper p {
     text-align: justify;
@@ -445,16 +485,24 @@ h4 {
     padding-bottom: 2vh;
     text-align: justify;
 }
-
+#business-background {
+    background-color: rgba(112, 162, 204, 1);
+    background: linear-gradient(to bottom, rgba(112, 162, 204, 1), #ffffff);
+}
 /*************** Family Page ***************/
 
 
 #family-cover {
-    height: 40vh;
-    min-height: 200px;
+    min-height: 40vh;
+
     width: 100%;
     background: url("../images/family/family-splash2.jpg");
     background-size: cover  ;
     position: relative;
     display: block;
+}
+@media screen and (max-device-width: 1100px) {
+    #family-cover {
+        min-height: 200px;
+    }
 }

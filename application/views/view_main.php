@@ -1,7 +1,7 @@
 
 <div class="page-cover" id="page-cover" >
     <div >
-        <video  poster="/../../images/sad.jpg" id="bgvid" playsinline autoplay muted loop>
+        <video  poster="/images/sad.jpg" id="bgvid" playsinline autoplay muted loop>
             <!-- WCAG general accessibility recommendation is that media such as background video play through
             only once. Loop turned on for the purposes of illustration; if removed, the end of the video
             will fade in the same way created by pressing the "Pause" button
@@ -87,22 +87,22 @@
     <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-4 container " id="study">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 categories-item container">
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Внж на основании обучения в словацком университете</p>
-            <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-2"></div>
-            <br><a href="/education" class=" col-xs-4 col-sm-4 col-md-4 col-lg-8">Подробнее</a>
+            <div class=" col-xs-3 col-sm-3 col-md-3 col-lg-2"></div>
+            <br><a href="/education" class=" col-xs-6 col-sm-6 col-md-6 col-lg-8">Подробнее</a>
         </div>
     </div>
     <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-4 container"  id="business" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 categories-item container">
              <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Внж на основании открытия фирмы</p>
-            <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-2"></div>
-             <a href="/business" class=" col-xs-4 col-sm-4 col-md-4 col-lg-8">Подробнее</a>
+            <div class=" col-xs-3 col-sm-3 col-md-3 col-lg-2"></div>
+             <a href="/business" class=" col-xs-6 col-sm-6 col-md-6 col-lg-8">Подробнее</a>
         </div>
     </div>
     <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-4 container" id="family">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 categories-item container">
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Внж на основании воссоединения семьи</p>
-            <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-2"></div>
-            <a href="/family" class=" col-xs-4 col-sm-4 col-md-4 col-lg-8">Подробнее</a>
+            <div class=" col-xs-3 col-sm-3 col-md-3 col-lg-2"></div>
+            <a href="/family" class=" col-xs-6 col-sm-6 col-md-6 col-lg-8">Подробнее</a>
         </div>
     </div>
 

@@ -1,4 +1,4 @@
-<div id="family-cover">
+<div  class="container" id="family-cover">
     <h1>ВНЖ в Словакии на основании  ВНЖ оссоединения семьи</h1>
 </div>
 
